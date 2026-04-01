@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: radial-gradient(circle, #1a1a2e, #0f3460);
+  color: white;
+  text-align: center;
+}
+
+#topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgba(0,0,0,0.6);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#profilePic {
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.screen {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#packCards {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+.card {
+  min-width: 140px;
+  padding: 15px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ffffff, #dcdcdc);
+  color: black;
+  animation: pop 0.4s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+#memoryBoard {
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.memoryCard {
+  width: 90px;
+  height: 90px;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
