@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Card Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="topbar">
+  <div class="left">
+    <img id="profilePic" src="https://via.placeholder.com/50">
+    <input type="file" id="uploadPic" accept="image/*">
+  </div>
+  <div id="coins">Coins: 0</div>
+</div>
+
+<div id="menu">
+  <button onclick="openShop()">Shop</button>
+  <button onclick="openCollection()">Collection</button>
+  <button onclick="openMemory()">Memory</button>
+</div>
+
+<div id="shop" class="screen">
+  <h2>Shop</h2>
+  <button onclick="openPack('medieval')">Medieval Fruits</button>
+  <button onclick="openPack('jobs')">Jobs</button>
+  <button onclick="openPack('pirates')">Pirates</button>
+</div>
+
+<div id="packScreen" class="screen hidden">
+  <h2>Opening Pack</h2>
+  <div id="packCards"></div>
+  <button onclick="nextCard()">Reveal Next</button>
+</div>
+
+<div id="collection" class="screen hidden">
+  <h2>Your Collection</h2>
+  <div id="collectionCards"></div>
+</div>
+
+<div id="memory" class="screen hidden">
+  <h2>Memory Game</h2>
+  <div id="memoryBoard"></div>
+</div>
+
+<script src="cards.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
